@@ -1,0 +1,115 @@
+
+table#ticket-list{
+    width: 100%;
+}
+table#ticket-list thead{
+    background:#F7F7F0;
+}
+
+table#ticket-list thead th{
+
+    border-color: #D7D7D7 #D7D7D7 #999999;
+    border-style: solid;
+    border-width: 1px;
+    font-size: 11px;
+    font-weight: bold;
+    padding: 2px 0.5em;
+    vertical-align: bottom
+}
+table#ticket-list tr.ticket-even{
+    background:#F6F6F6;
+    border-color: #CCCCCC;
+    color: #333333;
+}
+table#ticket-list  th,table#ticket-list  td{
+    border: 1px dotted #DDDDDD;
+    padding: 0.3em 0.5em;
+    vertical-align: top; 
+    padding:5px
+}
+table#ticket-list  tr:hover{
+   background:#EEEEDD;
+}
+table#ticket-list  th a,table#ticket-list  td a{
+    color:#21759B;
+    font-size:14px;
+}
+table#ticket-list  td a:hover{
+    text-decoration: none;
+}
+
+
+/*--------------------------------------------------------------
+ Single Ticket
+--------------------------------------------------------------*/
+#contents #ticket {
+    max-width: 100%;
+    margin:0 auto;
+}
+
+.ticket-info {
+    background: none repeat scroll 0 0 #FFFFDD;
+    border: 1px outset #999966;
+    margin-top: 1em;
+    padding: 0.5em 1em;
+    position: relative;
+}
+h1 .status {
+    color: #444444;
+}
+.ticket h2.summary {
+    margin: 0 0 0.8em;
+    font-size: 16px;
+    font-weight: bold;
+}
+.ticket-info .date {
+    color: #999966;
+    float: right;
+    font-size: 85%;
+    position: relative;
+}
+.ticket-info .date p {
+    margin: 0.3em;
+}
+.ticket-info table.properties {
+    border-collapse: collapse;
+    border-top: 1px solid #DDDD99;
+    clear: both;
+    table-layout: fixed;
+    width: 100%;
+}
+.ticket-info table.properties tr {
+    border-bottom: 1px dotted #EEEEDD;
+}
+.ticket-info table.properties td, #ticket table.properties th {
+    font-size: 80%;
+    padding: 0.5em 1em;
+    vertical-align: top;
+}
+.ticket-info table.properties th {
+    color: #666633;
+    font-weight: normal;
+    text-align: left;
+    width: 20%;
+}
+.ticket-info table.properties td {
+    width: 30%;
+}
+.ticket-info table.properties td p:first-child {
+    margin-top: 0;
+}
+.ticket-info table.properties td p:last-child {
+    margin-bottom: 0;
+}
+.ticket-info table.properties .description {
+    border-top: 1px solid #DDDD99;
+}
+.ticket-info .description h3 {
+    border-bottom: 1px solid #DDDD99;
+    color: #666633;
+    font-size: 100%;
+    font-weight: normal;
+}
+.ticket-info .description h3 .lastmod {
+    font-size: 90%;
+}

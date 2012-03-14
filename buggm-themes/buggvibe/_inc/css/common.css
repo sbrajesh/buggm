@@ -1,0 +1,266 @@
+
+/*--------------------------------------------------------------
+ Ticket List
+--------------------------------------------------------------*/
+ol#ticket-list{
+    margin:5px;
+    padding:10px;
+}
+ol#ticket-list > li{
+    list-style-type: none;
+}
+/*
+ol#ticket-list > li:nth-child(even){
+   background: #F8F8F8;
+   border-bottom: 1px solid #EEEEEE; 
+}
+ol#ticket-list > li:nth-child(odd){
+    background:#fff;
+    border:1px solid #EEEEEE;
+}
+*/
+ol#ticket-list > li header{
+    background:#FFFFFF;
+    border-radius: 5px 5px 0 0;
+    box-shadow: 0 0 0 1px #ddd;
+    margin-top: 20px;
+    padding: 10px 20px;
+}
+ol#ticket-list > li header h2{
+    float:left;
+    overflow: hidden;
+}
+ol#ticket-list > li header h2 a{
+    font-size: 1em;
+    text-transform: capitalize;
+}
+
+ol#ticket-list > li .author {
+    font-size:12px;
+    display:block;
+    float:right;
+}
+
+ol#ticket-list > li .entry{
+    
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 1px 0 0px 1px #f8f8f8;
+    padding: 0 20px 20px;
+    
+}
+
+ul.ticket-meta{
+    border-top: 1px solid #e2e2e2;
+    color: #333;
+    font-size: 12px;
+    list-style: none outside none;
+    margin: 10px 0 0;
+    padding: 10px;
+}
+ul.ticket-meta li{
+    border-right: 1px solid #e2e2e2;
+    float: left;
+    margin: 0 15px 10px 0;
+    padding: 0 15px 0 0;
+    list-style-type: none; 
+}
+ul.ticket-meta li:first-child{
+ width:30px;
+}
+ul.ticket-meta small{
+    color: #888;
+    display: block;
+    font-size: 10px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+ul.ticket-meta li a{
+    color: #333;
+}
+ul.ticket-meta li a:hover{
+    color:#1982D1;
+}
+#action {
+    line-height: 2em;
+}
+
+/**
+Taxonomy: Workflow Keywords*/
+span.kw-selected{
+    font-style: italic;
+    padding:10px;
+}
+span.kw-remove{
+    padding:2px;
+    font-size: .8em;
+    background:#333;
+    color:#fff;
+    box-shadow:1px 1px 1px #ccc;
+    display:inline-block;
+    padding: 0px 4px;
+    margin:5px;
+    cursor:pointer;
+}
+
+/*--------------------------------------------------------------------
+Single Ticket
+----------------------------------------------------------------------*/
+/*--------------------------------------------------------------
+ Single Ticket
+--------------------------------------------------------------*/
+#contents #ticket {
+    max-width: 100%;
+    margin:0 auto;
+}
+#contents #ticket>h1 .status{
+    color: #444444;
+}
+#ticket .ticket-info {
+    background:#fff;
+    border: 1px outset #ddd;
+    margin-top: 10px;
+    padding: 5px 10px;
+    position: relative;
+    border-radius:5px;
+}
+
+.ticket-info .date {
+    color: #333;
+    float: right;
+   }
+.ticket-info .date p {
+    margin: 0.3em;
+}
+.ticket-info table.properties {
+    border-collapse: collapse;
+    border-top: 1px solid #ddd;
+    clear: both;
+    table-layout: fixed;
+    width: 100%;
+}
+.ticket-info table.properties tr {
+    border-bottom: 1px dotted #ddd;
+}
+.ticket-info table.properties td, #ticket table.properties th {
+    font-size: .8em;
+    padding: 10px 10px;
+    vertical-align: top;
+}
+.ticket-info table.properties th {
+    color: #333;
+    text-align: left;
+    width: 20%;
+}
+.ticket-info table.properties td {
+    width: 30%;
+}
+.ticket-info table.properties td p:first-child {
+    margin-top: 0;
+}
+.ticket-info table.properties td p:last-child {
+    margin-bottom: 0;
+}
+.ticket-info table.properties .description {
+    border-top: 1px solid #ddd;
+}
+.ticket-info .description h3 {
+    border-bottom: 1px solid #ddd;
+    color: #333;
+    
+}
+.ticket-info .description h3 .lastmod {
+    font-size: .9em;
+}
+
+
+#ticket h2.summary {
+    margin: 0 0 10px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+
+/*ticket comments*/
+/* comment styling*/
+ul#ticket-comment-list{
+    border:1px outset #ddd;
+    padding:10px;
+}
+
+ul#ticket-comment-list li.comment{
+    list-style-type: none;
+    padding:5px;
+}
+
+ul#ticket-comment-list li.depth-1{
+    
+}
+ul#ticket-comment-list li.depth-2{
+    
+}
+
+ul#ticket-comment-list li.comment .commenter-info{
+    border-bottom: 1px solid #ddd;
+}
+
+ul.update-list{
+    margin-left:30px;
+}
+.update-list li{
+    list-style-type: square;
+    margin:10px;
+}
+/*--------------------------------------------------------------
+ Navigation/Pagination related
+--------------------------------------------------------------*/
+ul.page-numbers{
+    border-radius: 3px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+    display: inline-block;
+    margin-bottom: 0;
+    margin-left: 0;
+}
+ul.page-numbers li{
+    display: inline;
+}
+ul.page-numbers a,ul.page-numbers span {
+   
+    border-color: #DDDDDD;
+    border-style: solid;
+    border-width: 1px 1px 1px 0;
+    float: left;
+    line-height: 34px;
+    padding: 0 14px;
+    text-decoration: none;
+}
+
+ul.page-numbers li:first-child a {
+    border-left-width: 1px;
+    border-radius: 3px 0 0 3px;
+}
+
+ul.page-numbers li a:hover {
+    font-weight: bold;
+}
+
+ul.page-numbers span.current, ul.page-numbers span.current :hover {
+    background-color: transparent;
+    color: #999999;
+    cursor: pointer;
+}
+
+
+.ticket_action span.hint{
+    text-align: right;
+    padding:10px;
+    font-size: .8em;
+    font-style: italic;
+}
+.comment-entry{
+    margin-top:10px;
+}
+.comment-entry p{
+    margin-bottom: 8px;
+}

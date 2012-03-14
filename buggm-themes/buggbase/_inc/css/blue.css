@@ -1,0 +1,389 @@
+/**
+* Theme Name: BuggM 
+* Version:1.0
+*/
+/**
+Include reset CSS*/
+@import url(_inc/css/reset.css);
+@import url(_inc/css/font.css);
+
+/* =Global
+----------------------------------------------- */
+.clear{clear:both;}
+.alignright{float:right;}
+.alignleft{float:left;}
+.alignnone{float:none;}
+
+h1, h2, h3{ line-height:1.33em;}
+h1{font-size:2.2em;}
+h3{font-size: 1.2em;}
+
+
+/**
+ Links*/
+a{
+    text-decoration: none;
+    font-weight: normal;
+    color:  #1982d1;
+}
+
+a:focus,
+a:active,
+a:hover {text-decoration: underline;}
+
+/* Headings */
+h1,h2,h3,h4,h5,h6 {
+	clear: both;
+}
+
+body{background: #E6E7E2;}
+
+/*--------------------------------------------------------------
+ Header
+--------------------------------------------------------------*/
+#page{
+    background: #fff;
+}
+#page,div#htop{
+    width:990px;
+    margin:0 auto;
+}
+header#top,nav#main-menu,div#container,footer#footer{
+    padding:10px;
+}
+div#htop{
+     border-top:5px solid #0096CD;
+}
+header#top{
+     border-bottom: 1px solid   #EAEAEA;
+}
+
+
+header#top #search, header#top #logo{
+    width:49%;
+    float:left;
+}
+header#top #search{
+    float:right;
+}
+
+/*--------------------------------------------------------------
+ Container/content/sidebar
+--------------------------------------------------------------*/
+#contents{
+    width:630px;
+    float:left;
+}
+#sidebar{
+    width:320px;
+    float:left;
+    padding:10px;
+}
+
+#action {
+    line-height: 2em;
+}
+
+/*mine*/
+
+.buggm_form fieldset{
+    padding:10px;
+    border: 1px solid #ccc;
+}
+
+/* comment styling*/
+ul#comment-list{
+    border:1px outset #999966;
+    padding:10px;
+}
+
+ul#comment-list li.comment{
+    list-style-type: none;
+    padding:5px;
+}
+
+ul#comment-list li.depth-1{
+    
+}
+ul#comment-list li.depth-2{
+    
+}
+
+ul#comment-list li.comment .commenter-info{
+    border-bottom: 1px solid #999966;
+}
+
+span.kw-selected{
+    font-style: italic;
+    padding:10px;
+}
+span.kw-remove{
+    padding:2px;
+    font-size: .8em;
+    background:#333;
+    color:#fff;
+    box-shadow:1px 1px 1px #ccc;
+    display:inline-block;
+    padding: 0px 4px;
+    margin:5px;
+    cursor:pointer;
+}
+
+/*--------------------------------------------------------------
+ Top Main Navigatin
+--------------------------------------------------------------*/
+nav#main-menu{
+    background: #0096CD;
+    padding: 5px 10px;
+    height:20px;
+}
+nav#main-menu ul {
+    margin:0; 
+    padding:0; 
+    list-style:none;
+}   
+     
+    /* make the LI display inline */
+    /* it's position relative so that position absolute */
+    /* can be used in submenu */
+    nav#main-menu ul li {
+        float:left; 
+        display:block; 
+        /*width:100px; 
+        */
+        position:relative;
+        z-index:500; 
+        margin:0 1px;
+    }
+         
+    /* this is the parent menu */
+    nav#main-menu ul li a {
+        display:block; 
+        padding:8px 5px 0 5px; 
+        font-weight:700;  
+        height:23px; 
+        text-decoration:none; 
+        color:#fff; 
+        text-align:center; 
+        color:#333;
+        border-bottom:2px solid #ccc;
+    }
+ 
+    nav#main-menu ul li a:hover {
+       border-bottom:2px solid #333;
+    }
+     
+    /* you can make a different style for default selected value */
+    nav#main-menu ul a.selected {
+        color:#f00;
+    }
+     
+        /* submenu, it's hidden by default */
+        nav#main-menu ul ul {
+            position:absolute; 
+            left:0; 
+            display:none; 
+            margin:0 0 0 -1px; 
+            padding:0; 
+            list-style:none;
+        }
+         
+        nav#main-menu ul ul li {
+            width:100px; 
+            float:left; 
+            border-top:1px solid #fff;
+        }
+         
+        /* display block will make the link fill the whole area of LI */
+        nav#main-menu ul ul a {
+            display:block;  
+            height:15px;
+            padding: 8px 5px; 
+            color:#666;
+        }
+         
+        nav#main-menu ul ul a:hover {
+            text-decoration:underline;  
+        }
+
+
+/*--------------------------------------------------------------
+ Errors / Success Messages| Thank you BuddyPress|bp-default
+--------------------------------------------------------------*/
+div#buggm-message {
+	margin: 0 0 15px;
+}
+#buggm-message.info {
+	margin-bottom: 0;
+}
+div#buggm-message.updated {
+	clear: both;
+}
+div#buggm-message p {
+	font-size: 12px;
+	display: block;
+	padding: 10px 15px;
+}
+div#buggm-message.error p {
+	background-color: #db1717;
+	border-color: #a71a1a;
+	clear: left;
+	color: #fff;
+}
+div#buggm-message.updated p {
+	background-color: #8ff57a;
+	border-color: #80cf70;
+	color: #1a6a00;
+}
+
+
+/*--------------------------------------------------------------
+Forms/forum Fields
+--------------------------------------------------------------*/
+input[type=text],
+input[type=password],
+textarea {
+	background: #fafafa;
+	-moz-box-shadow: inset 0 1px 1px rgba(0,0,0,0.1);
+	-webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,0.1);
+	box-shadow: inset 0 1px 1px rgba(0,0,0,0.1);
+	border: 1px solid #ddd;
+	color: #888;
+}
+input[type=text]:focus,
+textarea:focus {
+	color: #373737;
+}
+textarea {
+	padding-left: 3px;
+	width: 98%;
+}
+input[type=text] {
+	padding: 3px;
+}
+input#s {
+	
+	-moz-border-radius: 2px;
+	border-radius: 2px;
+	font-size: 14px;
+	height: 22px;
+	line-height: 1.2em;
+	padding: 4px 10px 4px 10px;
+}
+input#searchsubmit {
+	
+}
+
+#advance-filter{
+    display:none;
+}
+
+
+
+/*--------------------------------------------------------------
+ Ticket List
+--------------------------------------------------------------*/
+ol#ticket-list{
+    margin:5px;
+    padding:10px;
+    
+   
+}
+ol#ticket-list li.type-ticket{
+    list-style-type: none;
+    background: none repeat scroll 0 0 #FFFFFF;
+    border: 1px solid #CCCCCC;
+    border-radius: 5px 5px 5px 5px;
+    box-shadow: 0 0 2px 2px #DDDDDD;
+    margin-top: 20px;
+    padding: 0px 20px 20px;
+    
+}
+ol#ticket-list li.ticket-even{
+   background: #F8F8F8;
+    border-bottom: 1px solid #EEEEEE; 
+}
+ol#ticket-list li.ticket-odd{
+    background:#fff;
+    border:1px solid #EEEEEE;
+}
+ol#ticket-list li.type-ticket h2 a{
+    font-size: 1em;
+}
+
+
+/*single post*/
+#contents .ticket {
+   
+    max-width: 100%;
+   
+    margin:0 auto;
+}
+
+.ticket-info {
+    background: none repeat scroll 0 0 #FFFFDD;
+    border: 1px outset #999966;
+    margin-top: 1em;
+    padding: 0.5em 1em;
+    position: relative;
+}
+
+h1 .status {
+    color: #444444;
+}
+.ticket h2.summary {
+    margin: 0 0 0.8em;
+    font-size: 16px;
+    font-weight: bold;
+}
+.ticket-info .date {
+    color: #999966;
+    float: right;
+    font-size: 85%;
+    position: relative;
+}
+.ticket-info .date p {
+    margin: 0.3em;
+}
+.ticket-info table.properties {
+    border-collapse: collapse;
+    border-top: 1px solid #DDDD99;
+    clear: both;
+    table-layout: fixed;
+    width: 100%;
+}
+.ticket-info table.properties tr {
+    border-bottom: 1px dotted #EEEEDD;
+}
+.ticket-info table.properties td, #ticket table.properties th {
+    font-size: 80%;
+    padding: 0.5em 1em;
+    vertical-align: top;
+}
+.ticket-info table.properties th {
+    color: #666633;
+    font-weight: normal;
+    text-align: left;
+    width: 20%;
+}
+.ticket-info table.properties td {
+    width: 30%;
+}
+.ticket-info table.properties td p:first-child {
+    margin-top: 0;
+}
+.ticket-info table.properties td p:last-child {
+    margin-bottom: 0;
+}
+.ticket-info table.properties .description {
+    border-top: 1px solid #DDDD99;
+}
+.ticket-info .description h3 {
+    border-bottom: 1px solid #DDDD99;
+    color: #666633;
+    font-size: 100%;
+    font-weight: normal;
+}
+.ticket-info .description h3 .lastmod {
+    font-size: 90%;
+}

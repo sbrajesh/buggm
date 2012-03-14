@@ -1,0 +1,718 @@
+/**
+font/text styling. Credit for the css goes to TwentyEleven WordPress theme
+*/
+
+body, input, textarea {
+	color: #373737;
+	font-size:1em;
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-weight: normal;
+	line-height: 1.625em;
+}
+hr {
+	background-color: #ccc;
+	border: 0;
+	height: 1px;
+	margin-bottom: 20px;
+}
+
+/* Text elements */
+
+ul, ol {
+	margin: 0 0 1.625em 2.5em;
+}
+ul {
+	list-style: square;
+}
+ol {
+	list-style-type: decimal;
+}
+ol ol {
+	list-style: upper-alpha;
+}
+ol ol ol {
+	list-style: lower-roman;
+}
+ol ol ol ol {
+	list-style: lower-alpha;
+}
+ul ul, ol ol, ul ol, ol ul {
+	margin-bottom: 0;
+}
+dl {
+	margin: 0 1.625em;
+}
+dt {
+	font-weight: bold;
+}
+dd {
+	margin-bottom: 1.625em;
+}
+strong {
+	font-weight: bold;
+}
+cite, em, i {
+	font-style: italic;
+}
+blockquote {
+	font-family: Georgia, "Bitstream Charter", serif;
+	font-style: italic;
+	font-weight: normal;
+	margin: 0 3em;
+}
+blockquote em, blockquote i, blockquote cite {
+	font-style: normal;
+}
+blockquote cite {
+	color: #666;
+	font: 12px "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-weight: 300;
+	letter-spacing: 0.05em;
+	text-transform: uppercase;
+}
+pre {
+	background: #f4f4f4;
+	font: 13px "Courier 10 Pitch", Courier, monospace;
+	line-height: 1.5;
+	margin-bottom: 1.625em;
+	overflow: auto;
+	padding: 0.75em 1.625em;
+}
+code, kbd {
+	font: 13px Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
+}
+abbr, acronym, dfn {
+	border-bottom: 1px dotted #666;
+	cursor: help;
+}
+address {
+	display: block;
+	margin: 0 0 1.625em;
+}
+ins {
+	background: #fff9c0;
+	text-decoration: none;
+}
+sup,
+sub {
+	font-size: 10px;
+	height: 0;
+	line-height: 1;
+	position: relative;
+	vertical-align: baseline;
+}
+sup {
+	bottom: 1ex;
+}
+sub {
+	top: .5ex;
+}
+
+/* =Global
+----------------------------------------------- */
+.clear{clear:both;}
+.alignright{float:right;}
+.alignleft{float:left;}
+.alignnone{float:none;}
+
+h1, h2, h3{ line-height:1.33em;}
+h1{font-size:2.2em;}
+h3{font-size: 1.2em;}
+
+
+/**
+ Links*/
+a{
+    text-decoration: none;
+    font-weight: normal;
+    color:  #1982d1;
+}
+
+a:focus,
+a:active,
+a:hover {text-decoration: underline;}
+
+/* Headings */
+h1,h2,h3,h4,h5,h6 {
+	clear: both;
+}
+
+body{background: #E6E7E2;}
+
+#page{
+    background: #fff;
+}
+
+/*--------------------------------------------------------------
+ Header
+--------------------------------------------------------------*/
+
+#page,div#htop{
+    width:990px;
+    margin:0 auto;
+}
+header#top,nav#main-menu,div#container,footer#footer{
+    padding:10px;
+}
+div#htop{
+     border-top:5px solid #0096CD;
+}
+header#top{
+     border-bottom: 1px solid   #EAEAEA;
+}
+
+
+header#top #search, header#top #logo{
+    width:49%;
+    float:left;
+}
+header#top #search{
+    float:right;
+}
+header #logo h1 a{
+    color:#373737;
+    text-decoration: none;
+}
+
+
+/*footer*/
+footer#footer{
+  border-top:2px solid #0096CD;  
+}
+/*--------------------------------------------------------------
+ Top Main Navigatin
+
+Credit:I don't remember but the menu css was perhaps from an article by Chris Coyier on css-tricks.com
+--------------------------------------------------------------*/
+nav#main-menu{
+    padding: 5px 10px;
+    height:20px;
+    border-bottom: 5px solid #0096CD;
+}
+nav#main-menu ul {
+    margin:0; 
+    padding:0; 
+   }   
+ nav#main-menu ul li {
+        float:left; 
+        display:block; 
+        position:relative;
+        z-index:500; 
+        margin:0 1px;
+    }
+         
+ /* this is the parent menu */
+nav#main-menu ul li a {
+        display:block; 
+        padding:1px 5px 0 5px; 
+        font-weight:bold;  
+        height:24px; 
+        text-decoration:none; 
+        color:#fff; 
+        text-align:center; 
+        color:#333;
+       /* border-bottom:5px solid #ccc;*/
+}
+ 
+    nav#main-menu  ul  li a:hover,nav#main-menu ul li.current-menu-item  a,li.current-parent-item-hover  a {
+       border-bottom:5px solid #333;
+    }
+     
+    /* you can make a different style for default selected value */
+    nav#main-menu  ul  a.selected {
+        color:#f00;
+    }
+     
+        /* submenu, it's hidden by default */
+        nav#main-menu ul ul {
+            position:absolute; 
+            left:0; 
+            display:none; 
+            margin:0 0 0 -1px; 
+            padding:0 0 10px 0; 
+            list-style:none;
+           
+           
+            background: #365D95;
+            border-bottom-left-radius: 5px;
+            border-bottom-right-radius: 5px;
+            border-color: #CCCCCC;
+            border-style: solid;
+            border-width: 0 1px 2px;
+            box-shadow: 0 0 6px #999999;
+           z-index: 99999;
+        }
+         
+        nav#main-menu  ul ul li {
+            width:100px; 
+            float:left; 
+            }
+         
+        /* display block will make the link fill the whole area of LI */
+        nav#main-menu ul ul a,nav#main-menu ul ul li.current-menu-item  a  {
+            display:block;  
+            height:15px;
+            padding: 8px 5px; 
+            color:#FDFDFD;
+            border:none;
+            border-bottom:1px solid #fdfdfd;
+            text-decoration: none;
+        }
+        nav#main-menu ul ul a:hover,nav#main-menu ul li.current-menu-item ul a:hover{
+              border:none;
+              color:#FDFDFD;
+              text-decoration: none;
+        }
+         
+        nav#main-menu ul ul a:hover {
+            
+        }
+        
+
+/*--------------------------------------------------------------
+Forms/form Fields
+--------------------------------------------------------------*/
+.label{
+    background-color: #666;
+    border-radius: 3px;
+    color: #FFFFFF;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 2px 4px 3px;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+}
+form fieldset{
+     box-shadow:0 2px 2px #333333;
+}
+form legend{
+    background-color:#0096CD;
+    border-radius: 3px;
+    color: #fff;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 2px 10px;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+    text-transform: uppercase;
+    margin:10px 0px 0px;
+    
+}
+input[type=text],
+input[type=password],
+textarea {
+	background: #fafafa;
+	-moz-box-shadow: inset 0 1px 1px rgba(0,0,0,0.1);
+	-webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,0.1);
+	box-shadow: inset 0 1px 1px rgba(0,0,0,0.1);
+	border: 1px solid #ddd;
+	color: #888;
+}
+input[type=text]:focus,
+textarea:focus {
+	color: #373737;
+}
+textarea {
+	padding-left: 3px;
+	width: 98%;
+}
+input[type=text] {
+	padding: 3px;
+}
+/*Search form input*/ 
+input#s {
+	
+	
+	border-radius: 2px;
+	font-size: 14px;
+	height: 22px;
+	line-height: 1.2em;
+	padding: 4px 10px 4px 10px;
+}
+input#searchsubmit {
+	
+}
+.buggm_form fieldset{
+    padding:10px;
+   
+}
+p.ticket-comment-submit{
+    margin-top:20px;
+}
+p.ticket-comment-submit input[type='submit']{
+    cursor:pointer;
+}
+/*comment form*/
+#commentform{
+    box-shadow:0 2px 2px #333333;
+    padding:10px;
+}
+#commentform p{
+    margin-bottom: 10px;
+}
+#commentform p label{
+    
+}
+#commentform p input,#commentform p textarea{
+    display: block;
+    border:1px solid #E2E2E2;
+    box-shadow:none;
+    background:#fff;
+}
+#advance-filter{
+    display:none;
+    padding:10px;
+}
+
+/*--------------------------------------------------------------
+ Tables
+--------------------------------------------------------------*/
+table{
+    border-collapse: collapse;
+}
+tr,td,th{
+    border:none;
+}
+
+/*--------------------------------------------------------------
+ Navigation/Pagination related
+--------------------------------------------------------------*/
+ul.page-numbers{
+    border-radius: 3px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+    display: inline-block;
+    margin-bottom: 0;
+    margin-left: 0;
+}
+ul.page-numbers li{
+    display: inline;
+}
+ul.page-numbers a,ul.page-numbers span {
+   
+    border-color: #DDDDDD;
+    border-style: solid;
+    border-width: 1px 1px 1px 0;
+    float: left;
+    line-height: 34px;
+    padding: 0 14px;
+    text-decoration: none;
+}
+
+ul.page-numbers li:first-child a {
+    border-left-width: 1px;
+    border-radius: 3px 0 0 3px;
+}
+ul.page-numbers span.current, ul.page-numbers span.current :hover {
+    background-color: transparent;
+    color: #999999;
+    cursor: pointer;
+}
+/*--------------------------------------------------------------
+ Errors / Success Messages| Thank you BuddyPress|bp-default
+--------------------------------------------------------------*/
+div#buggm-message {
+	margin: 0 0 15px;
+}
+#buggm-message.info {
+	margin-bottom: 0;
+}
+div#buggm-message.updated {
+	clear: both;
+}
+div#buggm-message p {
+	font-size: 12px;
+	display: block;
+	padding: 10px 15px;
+}
+div#buggm-message.error p {
+	background-color: #db1717;
+	border-color: #a71a1a;
+	clear: left;
+	color: #fff;
+}
+div#buggm-message.updated p {
+	background-color: #8ff57a;
+	border-color: #80cf70;
+	color: #1a6a00;
+}
+/*--------------------------------------------------------------
+ Single Post/Page
+--------------------------------------------------------------*/
+body.single article{
+    clear:both;
+}
+.single-post-nav .nav-next{
+    float:right;
+}
+article header .post-meta{
+    font-size:11px;
+}
+article .entry{
+    margin-top: 10px;
+}
+article .entry p{
+    font-family: Helvetica;
+    font-weight: normal;
+    line-height: 1.33em;
+    margin-bottom: 20px;
+}
+/*--------------------------------------------------------------
+ Comment
+--------------------------------------------------------------*/
+/* comment styling*/
+#comment-list{
+    
+    padding:10px;
+}
+
+#comment-list li.comment{
+    list-style-type: none;
+    padding:5px;
+    box-shadow:0 2px 2px #333333;
+    border-top: 1px solid #ccc;
+}
+article.comment footer{
+    border-bottom: 1px solid #999966;
+}
+article.comment footer .avatar {
+    padding-right:5px;
+}
+#comment-list li.comment ul.children{
+    /*border-left:1px solid #333;*/
+}
+/*
+#comment-list li.comment ul.children ul.children{
+    border-left:20px solid #333;
+}*/
+article.comment footer .edit-link{
+    float:right;
+}
+.comment-content{
+    clear:both;
+}
+#comment-list li.depth-1{
+    margin-bottom: 10px;
+}
+#comment-list li.depth-2{
+    
+}
+
+#comment-list li.comment .commenter-info{
+    border-bottom: 1px solid #999966;
+}
+
+/*Toggle Comment*/
+#toggle-comments{
+    cursor:pointer;
+    padding:5px 5px 5px 25px;
+    margin-top:10px;
+    font-weight: bold;
+     background:url(../images/hide.png) no-repeat 0 50%;
+}
+
+#toggle-comments.comment-toggled{
+    background:url(../images/expand.png) no-repeat 0 50%;
+}
+
+/*--------------------------------------------------------------
+ Ticket List
+--------------------------------------------------------------*/
+ol#ticket-list{
+    margin:5px;
+    padding:10px;
+}
+ol#ticket-list > li{
+    list-style-type: none;
+}
+/*
+ol#ticket-list > li:nth-child(even){
+   background: #F8F8F8;
+   border-bottom: 1px solid #EEEEEE; 
+}
+ol#ticket-list > li:nth-child(odd){
+    background:#fff;
+    border:1px solid #EEEEEE;
+}
+*/
+ol#ticket-list > li header{
+    background:#FFFFFF;
+    border-radius: 5px 5px 0 0;
+    box-shadow: 0 0 0 1px #ddd;
+    margin-top: 20px;
+    padding: 10px 20px;
+}
+ol#ticket-list > li header h2{
+    float:left;
+    overflow: hidden;
+}
+ol#ticket-list > li header h2 a{
+    font-size: 1em;
+    text-transform: capitalize;
+}
+
+ol#ticket-list > li .author {
+    font-size:12px;
+    display:block;
+    float:right;
+}
+
+ol#ticket-list > li .entry{
+    
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 1px 0 0px 1px #f8f8f8;
+    padding: 0 20px 20px;
+    
+}
+
+#ticket-list ul.ticket-meta{
+    border-top: 1px solid #e2e2e2;
+    color: #333;
+    font-size: 12px;
+    list-style: none outside none;
+    margin: 10px 0 0;
+    padding: 10px;
+}
+#ticket-list ul.ticket-meta li{
+    border-right: 1px solid #e2e2e2;
+    float: left;
+    margin: 0 15px 10px 0;
+    padding: 0 15px 0 0;
+}
+#ticket-list ul.ticket-meta li:first-child{
+ width:30px;
+}
+#ticket-list ul.ticket-meta small{
+    color: #888;
+    display: block;
+    font-size: 10px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+#ticket-list ul.ticket-meta li a{
+    color: #333;
+}
+#ticket-list ul.ticket-meta li a:hover{
+    color:#1982D1;
+}
+#action {
+    line-height: 2em;
+}
+
+/**
+Taxonomy: Workflow Keywords*/
+span.kw-selected{
+    font-style: italic;
+    padding:10px;
+}
+span.kw-remove{
+    padding:2px;
+    font-size: .8em;
+    background:#333;
+    color:#fff;
+    box-shadow:1px 1px 1px #ccc;
+    display:inline-block;
+    padding: 0px 4px;
+    margin:5px;
+    cursor:pointer;
+}
+
+/*--------------------------------------------------------------------
+Single Ticket
+----------------------------------------------------------------------*/
+/*--------------------------------------------------------------
+ Single Ticket
+--------------------------------------------------------------*/
+#contents #ticket {
+    max-width: 100%;
+    margin:0 auto;
+}
+#contents #ticket>h1 .status{
+    color: #444444;
+}
+#ticket .ticket-info {
+    background:#fff;
+    border: 1px outset #ddd;
+    margin-top: 10px;
+    padding: 5px 10px;
+    position: relative;
+    border-radius:5px;
+}
+
+.ticket-info .date {
+    color: #333;
+    float: right;
+   }
+.ticket-info .date p {
+    margin: 0.3em;
+}
+.ticket-info table.properties {
+    border-collapse: collapse;
+    border-top: 1px solid #ddd;
+    clear: both;
+    table-layout: fixed;
+    width: 100%;
+}
+.ticket-info table.properties tr {
+    border-bottom: 1px dotted #ddd;
+}
+.ticket-info table.properties td, #ticket table.properties th {
+    font-size: .8em;
+    padding: 10px 10px;
+    vertical-align: top;
+}
+.ticket-info table.properties th {
+    color: #333;
+    text-align: left;
+    width: 20%;
+}
+.ticket-info table.properties td {
+    width: 30%;
+}
+.ticket-info table.properties td p:first-child {
+    margin-top: 0;
+}
+.ticket-info table.properties td p:last-child {
+    margin-bottom: 0;
+}
+.ticket-info table.properties .description {
+    border-top: 1px solid #ddd;
+}
+.ticket-info .description h3 {
+    border-bottom: 1px solid #ddd;
+    color: #333;
+    
+}
+.ticket-info .description h3 .lastmod {
+    font-size: .9em;
+}
+
+
+#ticket h2.summary {
+    margin: 0 0 10px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+
+/*ticket comments*/
+/* comment styling*/
+ul#ticket-comment-list{
+    border:1px outset #ddd;
+    padding:10px;
+}
+
+ul#ticket-comment-list li.comment{
+    list-style-type: none;
+    padding:5px;
+}
+
+ul#ticket-comment-list li.depth-1{
+    
+}
+ul#ticket-comment-list li.depth-2{
+    
+}
+
+ul#ticket-comment-list li.comment .commenter-info{
+    border-bottom: 1px solid #ddd;
+}

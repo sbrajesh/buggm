@@ -1,0 +1,22 @@
+/**
+* Theme Name: BuggBase
+* Version:1.0
+* Description:  The Base theme shipped with BuggM bug tracker
+* Theme URI: http://buggm.com/
+* Author: Brajesh Singh
+* Author URI: http://buddydev.com
+*/
+
+/**
+ Include reset CSS*/
+@import url(_inc/css/reset.css);
+@import url(_inc/css/default.css);
+
+
+
+/*--------------------------------------------------------------
+ Layout: Container/content/sidebar
+--------------------------------------------------------------*/
+#contents{
+    width:970px;
+}

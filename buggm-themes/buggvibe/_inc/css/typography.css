@@ -1,0 +1,152 @@
+/*--------------------------------------------------------------
+3.0 - Non-structural| mostly from twentyelevent/bp-default
+--------------------------------------------------------------*/
+
+p {
+    margin-bottom: 15px;
+}
+p:last-child {
+    margin-bottom: 0;
+}
+.accessibly-hidden {
+    left: -999em;
+    position: absolute;
+}
+hr {
+    background-color: #e7e7e7;
+    border: 0 none;
+    clear: both;
+    height: 1px;
+    margin: 20px 0;
+}
+textarea {
+    resize: vertical;
+}
+
+/*--------------------------------------------------------------
+3.1 - Text
+--------------------------------------------------------------*/
+big {
+    font-size: 18px;
+}
+del {
+    text-decoration: line-through;
+}
+ins {
+    background: #fff9db;
+    text-decoration: none;
+}
+sub {
+    top: .5em;
+}
+sup {
+    bottom: 1em;
+}
+sub,
+sup {
+    height: 0;
+    line-height: 1;
+    position: relative;
+    vertical-align: baseline;
+}
+pre, blockquote {
+    margin-bottom: 20px;
+}
+pre,
+code p {
+    background: #f4f4f4;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    padding: 15px;
+    overflow: auto;
+}
+code {
+    font-family: "Monaco", courier, sans-serif;
+}
+blockquote {
+    font-family: georgia, times, serif;
+    font-size: 16px;
+    font-style: italic;
+    line-height: 150%;
+    padding: 0 3em;
+    quotes: none;
+}
+blockquote p {
+    margin-bottom: 15px !important;
+}
+
+
+/*--------------------------------------------------------------
+3.2 - Headers
+--------------------------------------------------------------*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 5px 0 15px 0;
+}
+h1 {
+    font-size: 28px;
+    margin-bottom: 25px;
+    line-height:24px;
+}
+h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+h3 {
+    font-size: 20px;
+}
+h4 {
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+h5 {
+    font-size: 14px;
+    margin-bottom: 0;
+}
+h6 {
+    font-size: 12px;
+    margin-bottom: 0;
+}
+
+
+/*--------------------------------------------------------------
+3.3 - Lists
+--------------------------------------------------------------*/
+div.post-item ul,
+div.post-item ol,
+div.post-item dl {
+    margin: 0 0 18px 1.5em;
+}
+div.post-item ul {
+    list-style: square;
+}
+div.post-item ol {
+    list-style: decimal;
+}
+div.post-item ol ol {
+    list-style: lower-alpha;
+}
+div.post-item ol ol ol {
+    list-style: lower-roman;
+}
+dl {
+    margin-left: 0;
+}
+dt {
+    font-size: 14px;
+    font-weight: bold;
+}
+dd {
+    margin: 0 0 15px 0;
+}
+div.post-item ul ul,
+div.post-item ol ol,
+div.post-item ol ul,
+div.post-item ul ol{
+    margin-bottom: 0px;
+}

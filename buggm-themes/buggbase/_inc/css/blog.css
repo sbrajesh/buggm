@@ -1,0 +1,78 @@
+/*--------------------------------------------------------------
+ Single Post/Page
+--------------------------------------------------------------*/
+body.single article{
+    clear:both;
+}
+.single-post-nav .nav-next{
+    float:right;
+}
+article header .post-meta{
+    font-size:11px;
+}
+article .entry{
+    margin-top: 10px;
+}
+article .entry p{
+    font-family: Helvetica;
+    font-weight: normal;
+    line-height: 1.33em;
+    margin-bottom: 20px;
+}
+/*--------------------------------------------------------------
+ Comment
+--------------------------------------------------------------*/
+/* comment styling*/
+#comment-list{
+    
+    padding:10px;
+}
+
+#comment-list li.comment{
+    list-style-type: none;
+    padding:5px;
+    box-shadow:0 2px 2px #333333;
+    border-top: 1px solid #ccc;
+}
+article.comment footer{
+    border-bottom: 1px solid #999966;
+}
+article.comment footer .avatar {
+    padding-right:5px;
+}
+#comment-list li.comment ul.children{
+    /*border-left:1px solid #333;*/
+}
+/*
+#comment-list li.comment ul.children ul.children{
+    border-left:20px solid #333;
+}*/
+article.comment footer .edit-link{
+    float:right;
+}
+.comment-content{
+    clear:both;
+}
+#comment-list li.depth-1{
+    margin-bottom: 10px;
+}
+#comment-list li.depth-2{
+    
+}
+
+#comment-list li.comment .commenter-info{
+    border-bottom: 1px solid #999966;
+}
+
+/*Toggle Comment*/
+#toggle-comments{
+    cursor:pointer;
+    padding:5px 5px 5px 25px;
+    margin-top:10px;
+    font-weight: bold;
+     background:url(../images/hide.png) no-repeat 0 50%;
+}
+
+#toggle-comments.comment-toggled{
+    background:url(../images/expand.png) no-repeat 0 50%;
+}

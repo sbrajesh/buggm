@@ -1,0 +1,71 @@
+/* =Global
+----------------------------------------------- */
+.clear{clear:both;}
+.alignright{float:right;}
+.alignleft{float:left;}
+.alignnone{float:none;}
+
+h1, h2, h3{ line-height:1.33em;}
+h1{font-size:2.2em;}
+h3{font-size: 1.2em;}
+
+
+/**
+ Links*/
+a{
+    text-decoration: none;
+    font-weight: normal;
+    color:  #1982d1;
+}
+
+a:focus,
+a:active,
+a:hover {text-decoration: underline;}
+
+/* Headings */
+h1,h2,h3,h4,h5,h6 {
+	clear: both;
+}
+
+body{background: #E6E7E2;}
+
+#page{
+    background: #fff;
+}
+
+/*--------------------------------------------------------------
+ Header
+--------------------------------------------------------------*/
+
+#page,div#htop{
+    width:990px;
+    margin:0 auto;
+}
+header#top,nav#main-menu,div#container,footer#footer{
+    padding:10px;
+}
+div#htop{
+     border-top:5px solid #0096CD;
+}
+header#top{
+     border-bottom: 1px solid   #EAEAEA;
+}
+
+
+header#top #search, header#top #logo{
+    width:49%;
+    float:left;
+}
+header#top #search{
+    float:right;
+}
+header #logo h1 a{
+    color:#373737;
+    text-decoration: none;
+}
+
+
+/*footer*/
+footer#footer{
+  border-top:2px solid #0096CD;  
+}

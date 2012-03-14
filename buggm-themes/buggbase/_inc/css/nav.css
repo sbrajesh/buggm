@@ -1,0 +1,88 @@
+/*--------------------------------------------------------------
+ Top Main Navigatin
+
+Credit:I don't remember but the menu css was perhaps from an article by Chris Coyier on css-tricks.com
+--------------------------------------------------------------*/
+nav#main-menu{
+    padding: 5px 10px;
+    height:20px;
+    border-bottom: 5px solid #0096CD;
+}
+nav#main-menu ul {
+    margin:0; 
+    padding:0; 
+   }   
+ nav#main-menu ul li {
+        float:left; 
+        display:block; 
+        position:relative;
+        z-index:500; 
+        margin:0 1px;
+    }
+         
+ /* this is the parent menu */
+nav#main-menu ul li a {
+        display:block; 
+        padding:1px 5px 0 5px; 
+        font-weight:bold;  
+        height:24px; 
+        text-decoration:none; 
+        color:#fff; 
+        text-align:center; 
+        color:#333;
+       /* border-bottom:5px solid #ccc;*/
+}
+ 
+    nav#main-menu  ul  li a:hover,nav#main-menu ul li.current-menu-item  a,li.current-parent-item-hover  a {
+       border-bottom:5px solid #333;
+    }
+     
+    /* you can make a different style for default selected value */
+    nav#main-menu  ul  a.selected {
+        color:#f00;
+    }
+     
+        /* submenu, it's hidden by default */
+        nav#main-menu ul ul {
+            position:absolute; 
+            left:0; 
+            display:none; 
+            margin:0 0 0 -1px; 
+            padding:0 0 10px 0; 
+            list-style:none;
+           
+           
+            background: #365D95;
+            border-bottom-left-radius: 5px;
+            border-bottom-right-radius: 5px;
+            border-color: #CCCCCC;
+            border-style: solid;
+            border-width: 0 1px 2px;
+            box-shadow: 0 0 6px #999999;
+           z-index: 99999;
+        }
+         
+        nav#main-menu  ul ul li {
+            width:100px; 
+            float:left; 
+            }
+         
+        /* display block will make the link fill the whole area of LI */
+        nav#main-menu ul ul a,nav#main-menu ul ul li.current-menu-item  a  {
+            display:block;  
+            height:15px;
+            padding: 8px 5px; 
+            color:#FDFDFD;
+            border:none;
+            border-bottom:1px solid #fdfdfd;
+            text-decoration: none;
+        }
+        nav#main-menu ul ul a:hover,nav#main-menu ul li.current-menu-item ul a:hover{
+              border:none;
+              color:#FDFDFD;
+              text-decoration: none;
+        }
+         
+        nav#main-menu ul ul a:hover {
+            
+        }
