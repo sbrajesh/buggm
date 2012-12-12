@@ -213,6 +213,7 @@ function buggm_load_message_template($ticket_id,$comment=false){?>
                     <a target="_blank" style="color:#069;font-family:Arial;font-size:13px;font-weight:bold;text-decoration:none" href="<?php echo buggm_get_user_url($commenter_id);?>"><?php echo buggm_get_user_name($commenter_id);?></a>:
                         <?php echo $comment_text;?>
                         <?php 
+                        $updates=false;
                         if(!empty($comment))
                          $updates=buggm_get_ticket_changes($comment->comment_ID);
                         if( $updates ) : ?>

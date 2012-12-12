@@ -52,7 +52,7 @@ function buggm_get_email_list_from_user_ids($users){
     global $wpdb;
     $query="SELECT user_email FROM {$wpdb->users} WHERE ID IN ({$user_list})";
     
-    $emails=$wpdb->get_col($wpdb->prepare($query));
+    $emails=$wpdb->get_col($query);
     return $emails;
 }
 

@@ -80,7 +80,7 @@ function buggm_save_comment(){
 //creates comment, no validation, nothing here, check buggm_save_comment 
 function buggm_add_comment($post_id=false){
     $user_id=buggm_get_current_user_id();
-    $post=wp_get_single_post($post_id);
+    $post=get_post($post_id);
    // echo "I am called";
     //wp_die("yehhh");
     $content=$_POST['comment'];
